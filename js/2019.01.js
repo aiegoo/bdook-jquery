@@ -11,6 +11,24 @@ $("#bt2").click(function(){
 
 
 
+/*
+var i = 1;
+$("#bt3").click(function(){
+	$(".box2").append('<div>'+(i++)+'</div>');
+	//$(".box2").append(`<div>${i++}</div>`);
+});
+*/
+$("#bt3").click(function(){
+	$(".box2").empty();
+	var num = new Array();
+	for(var i=0; i<45; i++){
+		num[i] = i + 1 + "번";
+	}
+	for(var i in num) {
+		$(".box2").append(`<div>${num[i]}</div>`);
+	}
+});
+
 
 
 
