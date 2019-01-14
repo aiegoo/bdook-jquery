@@ -1,8 +1,17 @@
 @import 'base.css';
 
 /* 2019.01.09 */
-.box {width:100px; height:100px; background-color:beige; border:2px solid #ff0;}
+.box {width:6.25rem; height:6.25rem; background-color:beige; border:2px solid #ff0;}
 
 /* 2019.01.10 */
-.box2 {max-width:1200px; margin:50px auto;}
-.box2 > div {width:80px; height:80px; line-height:80px; text-align:center; border:1px solid #f90; background-color:#999; color:#fff; font-size:1.5rem; float:left;}
+.box2 {width:20rem; margin:3.125rem auto;}
+.box2 > div {width:3rem; height:3rem; line-height:3rem; font-size: 0.7rem; text-align:center; border:0.0625rem solid #f90; background-color:#999; color:#fff; font-size:1.5rem; float:left;}
+.button-wrap {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 25rem;
+  }
+  .button-wrap button {
+    float: right;
+    margin-left: 0.5rem;
+  }
