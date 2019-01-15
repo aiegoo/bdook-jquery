@@ -35,7 +35,7 @@ $("#bt3").click(function(){
 	//log(num.slice(3, 5));
 	//log(num);
 	for(var i in num) {
-		$(".box2").append(`<div>${num[i]}번</div>`);
+		$(".box2").append(`<div>${num[i]}</div>`);
 	}
 });
 $("#bt4").click(function(){
