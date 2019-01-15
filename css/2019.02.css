@@ -1,4 +1,8 @@
 @import 'base.css';
+body {padding:2rem; text-align:center;}
 
-body {text-align:center; padding-top:3rem;}
-.box {width:200px; height:200px; margin:3rem auto; background-color:orange; position: absolute;}
+ .box {background-color:#f90; padding:1rem; margin:auto; height:100px; overflow:auto;}
+
+ #box2 {width:100px; height:100px; position:absolute; margin:0;}
+
+ .test {width:50%;}
