@@ -1,0 +1,74 @@
+@import 'base.css';
+
+li {list-style:none;}
+.red {border: 1px solid red;}
+
+#hdWrap { 
+	background-color: #ccc; 
+	padding: 50px 0 50px;
+}
+#hdWrap .bg {
+	position: absolute; 
+	width: 100%;height: 0;
+	background-color: rgba(204, 204, 204, 0.5); 
+	transition: 0.5s;
+	z-index: 1000;
+}
+#hdWrap.act .bg {
+	height: 180px;
+	z-index: -1;
+}
+#hdwrap .container:after {
+	content:""; 
+	display: block; 
+	clear: both;
+}
+
+#hdWrap h1 {
+	position: fixed; 
+	left:30px; top: 1px; 
+	padding-left: 30px;
+}
+
+#hdWrap #gnb {
+	float:right; 
+	margin-top: 20px;
+	position: relative;
+}
+#hdWrap #gnb > li {
+	position: relative; 
+	float: left;
+}
+#hdWrap #gnb > li a {
+	display: block; 
+	line-height: 180%; 
+	text-indent: 30px; 
+	z-index: 1000;
+}
+#hdWrap #gnb > li .d1 {
+	display: block; 
+	line-height: 100%;
+	font-size: 20px;
+	color: #0066ff;
+}
+#hdWrap #gnb > li .d2 {
+	position: absolute; 
+	width: 100%; 
+	height: 0; 
+	left: 0; 
+	transition: 0.5s;
+	padding: 15px; 
+	overflow:hidden;
+}
+#hdWrap #gnb > li .d2 a:hover  {
+	color: #33cc99;
+}
+
+#hdWrap #gnb > li .d2 a:first-child {margin-top: 10px;}
+#hdWrap #gnb > li:hover a.d1 {color: red;}
+#hdWrap #gnb:hover .d2 {
+	height: 180px; 
+	background-color: rgba (0,0,0,0.5); 
+	z-index: 10; 
+	transition: 0.8s}
+
